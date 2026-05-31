@@ -59,7 +59,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .section--navy h2, .section--navy h3 { color: #fff; }
 .eyebrow {
   display: inline-block; font-weight: 700; font-size: .82rem; letter-spacing: .06em;
-  color: var(--teal); text-transform: uppercase; margin-bottom: 10px;
+  color: #0a7c69; text-transform: uppercase; margin-bottom: 10px;
 }
 .section--navy .eyebrow { color: #7df0cf; }
 .section-head { max-width: 720px; margin: 0 auto 52px; text-align: center; }
@@ -359,6 +359,19 @@ input[type="range"]::-moz-range-thumb { width: 26px; height: 26px; border-radius
 /* ---------- Reveal on scroll ---------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.in { opacity: 1; transform: none; }
+
+/* ---------- Keyboard focus visibility ---------- */
+a:focus-visible, .btn:focus-visible, button:focus-visible,
+input:focus-visible, select:focus-visible, .faq__q:focus-visible {
+  outline: 3px solid var(--teal); outline-offset: 2px; border-radius: 6px;
+}
+
+/* ---------- Respect reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+      transition-duration: .001ms !important; scroll-behavior: auto !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
