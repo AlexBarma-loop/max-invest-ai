@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>פתיחת חשבון · MAX Invest AI</title>
+  <meta name="description" content="הצטרף ל-MAX Invest AI בכמה צעדים פשוטים והתחל לבנות את ההון ההתחלתי שלך מהקנייה הבאה." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__max">MAX</span>
+        <span class="brand__divider"></span>
+        <span class="brand__sub"><span class="brand__x">✕</span> Interactive Israel</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#how">איך זה עובד</a>
+        <a href="index.html#tracks">מסלולים</a>
+        <a href="about.html">עלינו</a>
+        <a href="index.html#faq">שאלות</a>
+        <a href="signup.html" class="btn btn--primary nav__cta">פתח חשבון</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="תפריט"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>הצעד הראשון להתחלה החדשה שלך</h1>
+      <p>שלוש דקות, אפס מינימום הפקדה. מלא את הפרטים ונחזור אליך עם קישור הפעלה ישירות באפליקציית MAX.</p>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container">
+      <div class="signup-grid">
+        <!-- Form -->
+        <div class="form-card">
+          <h2 style="margin-top:0;">פתיחת חשבון</h2>
+          <p style="color:var(--muted);">כבר יש לך כרטיס MAX? נחבר את ההשקעה ישירות אליו.</p>
+          <form id="signupForm" novalidate>
+            <div class="form-field" data-required>
+              <label for="fullname">שם מלא</label>
+              <input type="text" id="fullname" name="fullname" placeholder="ישראל ישראלי" />
+              <span class="form-error">נא להזין שם מלא</span>
+            </div>
+            <div class="form-field" data-required>
+              <label for="email">אימייל</label>
+              <input type="email" id="email" name="email" placeholder="name@example.com" />
+              <span class="form-error">נא להזין כתובת אימייל תקינה</span>
+            </div>
+            <div class="form-field" data-required>
+              <label for="phone">טלפון נייד</label>
+              <input type="tel" id="phone" name="phone" placeholder="050-0000000" />
+              <span class="form-error">נא להזין מספר נייד תקין</span>
+            </div>
+            <div class="form-field" data-required>
+              <label for="status">מה הסטטוס שלך?</label>
+              <select id="status" name="status">
+                <option value="">בחר/י…</option>
+                <option>חייל/ת בשירות חובה</option>
+                <option>סטודנט/ית</option>
+                <option>אחרי צבא / לפני לימודים</option>
+                <option>אחר</option>
+              </select>
+              <span class="form-error">נא לבחור סטטוס</span>
+            </div>
+            <div class="form-field" data-required>
+              <label for="track">מסלול מועדף (אפשר לשנות בכל עת)</label>
+              <select id="track" name="track">
+                <option value="">בחר/י מסלול…</option>
+                <option>סולידי</option>
+                <option>מאוזן</option>
+                <option selected>צמיחה (מומלץ ע"י AI)</option>
+                <option>נועז</option>
+                <option>גלובלי</option>
+                <option>S&amp;P 500</option>
+              </select>
+              <span class="form-error">נא לבחור מסלול</span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--block">פתח לי חשבון</button>
+            <div class="form-success" id="formSuccess">🎉 תודה! קיבלנו את הפרטים. נשלח אליך קישור הפעלה לאפליקציית MAX בדקות הקרובות.</div>
+            <p style="font-size:.82rem;color:var(--muted);margin:14px 0 0;">בלחיצה על הכפתור אני מאשר/ת קבלת פנייה ומסכים/ה לתקנון. זוהי מצגת קונספט לצורכי פרויקט אקדמי — לא תיפתח השקעה בפועל.</p>
+          </form>
+        </div>
+
+        <!-- Benefits / reassurance -->
+        <div>
+          <span class="eyebrow">למה עכשיו</span>
+          <h2>כל יום בלי MAX Invest AI הוא עודף שהלך לאיבוד</h2>
+          <ul class="benefits-list" style="margin-top:22px;">
+            <li><span class="check">✓</span><div><strong>אפס מינימום, אפס מאמץ</strong><span>לא צריך להפקיד סכום — בונים מהעודף של עסקאות שאתה ממילא מבצע.</span></div></li>
+            <li><span class="check">✓</span><div><strong>הפעלה מתוך אפליקציית MAX</strong><span>אם כבר יש לך כרטיס MAX, ההשקעה מתחברת אליו בכמה קליקים.</span></div></li>
+            <li><span class="check">✓</span><div><strong>שכבת AI שמגנה עליך</strong><span>המערכת עוצרת הפקדות לפני חריגה ממסגרת או כניסה למינוס.</span></div></li>
+            <li><span class="check">✓</span><div><strong>הכסף נזיל</strong><span>אפשר למשוך את הצבירה בכל עת, בכפוף לתנאי המסלול.</span></div></li>
+          </ul>
+
+          <div class="card" style="margin-top:24px;background:var(--grad-navy);color:#fff;">
+            <div class="persona" style="gap:14px;">
+              <div class="persona__avatar">ע</div>
+              <div>
+                <div class="persona__name" style="color:#fff;">עדי, 24 · סטודנטית</div>
+                <p class="persona__quote" style="color:#eaf2ff;">MAX עושה הכול לבד מהקפה היומי שלי. הצטרפתי בשלוש דקות ולא נגעתי בזה מאז."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="brand"><span class="brand__max">MAX</span> <span style="color:#7df0cf;font-weight:800;">Invest AI</span></div>
+          <p>השקעה פסיבית חכמה מתוך אפליקציית MAX, בשותפות עם אינטראקטיב ישראל.</p>
+        </div>
+        <div><h4>המוצר</h4><a href="index.html#how">איך זה עובד</a><a href="index.html#tracks">מסלולי השקעה</a><a href="how-it-works.html">פירוט טכנולוגי</a><a href="signup.html">פתיחת חשבון</a></div>
+        <div><h4>החברה</h4><a href="about.html">עלינו</a><a href="about.html#partnership">השותפות</a><a href="index.html#faq">שאלות נפוצות</a></div>
+        <div><h4>יצירת קשר</h4><a href="signup.html">הצטרפות</a><a href="mailto:invest@max.co.il">invest@max.co.il</a><a href="#">דבר עם נציג</a></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 MAX Invest AI · בשותפות Interactive Israel</span>
+        <span>תקנון · מדיניות פרטיות · נגישות</span>
+      </div>
+      <p class="footer__disclaimer">אין באמור משום ייעוץ או שיווק השקעות המתחשב בנתונים ובצרכים של כל אדם. השקעה כרוכה בסיכון, לרבות אובדן חלק מהקרן. אתר זה הוא מצגת קונספט שנבנתה לצורכי פרויקט אקדמי ואינו שירות פיננסי פעיל.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

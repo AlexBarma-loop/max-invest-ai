@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>איך זה עובד · MAX Invest AI</title>
+  <meta name="description" content="המנגנון המלא של MAX Invest AI: עיגול עסקאות, ניהול ב-6 מסלולים, תמחור דינמי ושכבת AI — מוסבר צעד אחר צעד." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__max">MAX</span>
+        <span class="brand__divider"></span>
+        <span class="brand__sub"><span class="brand__x">✕</span> Interactive Israel</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="how-it-works.html#mechanics">המנגנון</a>
+        <a href="how-it-works.html#tracks">מסלולים</a>
+        <a href="about.html">עלינו</a>
+        <a href="index.html#faq">שאלות</a>
+        <a href="signup.html" class="btn btn--primary nav__cta">פתח חשבון</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="תפריט"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>איך הופכים כל קפה להשקעה לעתיד</h1>
+      <p>ארבעה מנגנונים שעובדים יחד ברקע, כדי שאתה תוכל פשוט להמשיך לחיות.</p>
+    </div>
+  </section>
+
+  <!-- Mechanics infographic -->
+  <section class="section reveal" id="mechanics">
+    <div class="container">
+      <div class="steps">
+        <div class="step">
+          <div class="step__num"></div>
+          <h3>עיגול עסקאות</h3>
+          <p>כל חיוב בכרטיס האשראי מעוגל מעלה באחוז שתבחר. שילמת ₪13.50 על קפה? החיוב יהיה ₪15.00, וה-₪1.50 מופנים אוטומטית לחיסכון.</p>
+        </div>
+        <div class="step">
+          <div class="step__num"></div>
+          <h3>ניהול במסלולים</h3>
+          <p>הכספים מצטברים ומושקעים דרך אינטראקטיב ישראל ב-6 מסלולים ברורים (כמו קופת גמל), כדי לחסוך עלויות מסחר ועומס בחירת מניות.</p>
+        </div>
+        <div class="step">
+          <div class="step__num"></div>
+          <h3>תמחור דינמי</h3>
+          <p>ככל שתבחר באחוז עיגול גבוה יותר, דמי הניהול שתשלם על התיק יורדים. ככה האינטרס שלנו ושלך זהה — שתחסוך יותר.</p>
+        </div>
+        <div class="step">
+          <div class="step__num"></div>
+          <h3>שכבת ה-AI</h3>
+          <p>מודל בינה מלאכותית מנתח את תזרים ההוצאות שלך בזמן אמת, עוצר הפקדות כדי למנוע חריגה או מינוס, וממליץ על המסלול האידיאלי.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive demos reused -->
+  <section class="section section--tint reveal">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">נסה בעצמך</span>
+        <h2>מנגנון העיגול בפעולה</h2>
+        <p>הזז את הסליידר וראה איך כל קנייה הופכת להשקעה.</p>
+      </div>
+      <div class="roundup">
+        <div class="roundup__demo">
+          <div class="roundup__row">
+            <div class="coin-cup"><svg viewBox="0 0 48 48" fill="none"><path d="M12 18h22l-2 22a4 4 0 0 1-4 3.6H18A4 4 0 0 1 14 40L12 18Z" fill="#0B2A5B"/><path d="M34 22h4a4 4 0 0 1 0 8h-3" stroke="#0B2A5B" stroke-width="2"/><path d="M18 8c0 2 2 2 2 4M24 6c0 2 2 2 2 4M30 8c0 2 2 2 2 4" stroke="#13B6A0" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div class="roundup__arrow"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M40 24H8"/><path d="M18 14 8 24l10 10"/></svg></div>
+            <div class="roundup__price"><div class="from">₪<span id="ruFrom">13.50</span></div><div class="to">₪<span id="ruTo">15.00</span></div></div>
+          </div>
+          <div class="roundup__invest"><span class="label">הושקע מהעסקה הזו</span><span class="amount">+₪<span id="ruDiff">1.50</span></span></div>
+          <div class="roundup__slider-wrap"><label>סכום הקנייה <span>₪<span id="ruPriceLabel">13.50</span></span></label><input type="range" id="ruSlider" min="4" max="195" value="135" step="1" aria-label="סכום הקנייה" /></div>
+        </div>
+        <div class="roundup__side">
+          <h3>תמחור דינמי — ככל שתחסוך יותר, תשלם פחות</h3>
+          <p class="lead">הזז את אחוז העיגול וצפה בדמי הניהול יורדים.</p>
+          <div class="feemeter" style="margin-top:20px;text-align:start;">
+            <div class="gauge" style="margin:0;">
+              <div class="gauge__value" id="feeValue" style="color:var(--gain);">0.5%</div>
+              <div class="gauge__note" style="color:var(--muted);">דמי ניהול שנתיים על התיק</div>
+            </div>
+            <input type="range" id="feeSlider" min="1" max="10" value="8" step="1" style="background:var(--navy-50);margin:18px 0 6px;" aria-label="אחוז עיגול" />
+            <div class="scale" style="color:var(--muted);margin:0;"><span>עיגול 1%</span><span>עיגול 10%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tracks -->
+  <section class="section reveal" id="tracks">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">6 מסלולים</span>
+        <h2>בוחרים מסלול אחד — וזהו</h2>
+        <p>אין צורך לבחור מניות. ה-AI אף ימליץ לך על המסלול שמתאים לפרופיל הסיכון ולדפוסי הצריכה שלך.</p>
+      </div>
+      <div class="tracks">
+        <div class="track"><div class="track__head"><span class="track__ico">🛡️</span><div><h3>סולידי</h3><span class="track__sub">סיכון נמוך</span></div></div><p>יציבות ושמירת ערך.</p><div class="risk"><span class="risk__label">סיכון</span><span class="risk__dots"><i class="risk__dot on"></i><i class="risk__dot"></i><i class="risk__dot"></i><i class="risk__dot"></i><i class="risk__dot"></i></span></div></div>
+        <div class="track"><div class="track__head"><span class="track__ico">⚖️</span><div><h3>מאוזן</h3><span class="track__sub">אג"ח ומניות</span></div></div><p>איזון בין צמיחה ליציבות.</p><div class="risk"><span class="risk__label">סיכון</span><span class="risk__dots"><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot"></i><i class="risk__dot"></i><i class="risk__dot"></i></span></div></div>
+        <div class="track is-featured"><span class="track__tag">מומלץ ע"י AI</span><div class="track__head"><span class="track__ico">🌱</span><div><h3>צמיחה</h3><span class="track__sub">חשיפה מנייתית</span></div></div><p>פוטנציאל גבוה לטווח 3–4 שנים.</p><div class="risk"><span class="risk__label">סיכון</span><span class="risk__dots"><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot"></i><i class="risk__dot"></i></span></div></div>
+        <div class="track"><div class="track__head"><span class="track__ico">🚀</span><div><h3>נועז</h3><span class="track__sub">אגרסיבי</span></div></div><p>תנודתיות גבוהה, פוטנציאל מקסימלי.</p><div class="risk"><span class="risk__label">סיכון</span><span class="risk__dots"><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot"></i></span></div></div>
+        <div class="track"><div class="track__head"><span class="track__ico">🌍</span><div><h3>גלובלי</h3><span class="track__sub">פיזור בינלאומי</span></div></div><p>חשיפה לשווקים מובילים בעולם.</p><div class="risk"><span class="risk__label">סיכון</span><span class="risk__dots"><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot"></i><i class="risk__dot"></i></span></div></div>
+        <div class="track"><div class="track__head"><span class="track__ico">📈</span><div><h3>S&amp;P 500</h3><span class="track__sub">מדד ארה"ב</span></div></div><p>500 החברות הגדולות בארה"ב.</p><div class="risk"><span class="risk__label">סיכון</span><span class="risk__dots"><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot on"></i><i class="risk__dot"></i><i class="risk__dot"></i></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band reveal">
+    <div class="container">
+      <h2>הבנת איך זה עובד? נשאר רק להתחיל.</h2>
+      <p>שלוש דקות להפעלה, ואז ההון שלך נבנה לבד.</p>
+      <a href="signup.html" class="btn btn--navy btn--lg">פתח חשבון עכשיו</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="brand"><span class="brand__max">MAX</span> <span style="color:#7df0cf;font-weight:800;">Invest AI</span></div>
+          <p>השקעה פסיבית חכמה מתוך אפליקציית MAX, בשותפות עם אינטראקטיב ישראל.</p>
+        </div>
+        <div><h4>המוצר</h4><a href="index.html#how">איך זה עובד</a><a href="how-it-works.html#tracks">מסלולי השקעה</a><a href="how-it-works.html">פירוט טכנולוגי</a><a href="signup.html">פתיחת חשבון</a></div>
+        <div><h4>החברה</h4><a href="about.html">עלינו</a><a href="about.html#partnership">השותפות</a><a href="index.html#faq">שאלות נפוצות</a></div>
+        <div><h4>יצירת קשר</h4><a href="signup.html">הצטרפות</a><a href="mailto:invest@max.co.il">invest@max.co.il</a><a href="#">דבר עם נציג</a></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 MAX Invest AI · בשותפות Interactive Israel</span>
+        <span>תקנון · מדיניות פרטיות · נגישות</span>
+      </div>
+      <p class="footer__disclaimer">אין באמור משום ייעוץ או שיווק השקעות המתחשב בנתונים ובצרכים של כל אדם. השקעה כרוכה בסיכון, לרבות אובדן חלק מהקרן. אתר זה הוא מצגת קונספט שנבנתה לצורכי פרויקט אקדמי ואינו שירות פיננסי פעיל.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
