@@ -46,7 +46,7 @@
   var feeSlider = document.getElementById("feeSlider");
   function updateFee() {
     var pct = parseInt(feeSlider.value, 10);             // 1..100 (round-up %)
-    var fee = (1.0 - (pct - 1) / 99 * 0.9).toFixed(2);   // 1.00% .. 0.10%
+    var fee = (5.5 - (pct - 1) / 99 * 5.0).toFixed(2);   // 5.50% at 1% .. 0.50% at 100%
     set("feeValue", fee + "%");
   }
   if (feeSlider) {
