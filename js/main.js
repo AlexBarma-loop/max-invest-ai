@@ -45,8 +45,8 @@
   /* ---------- Dynamic fee meter ---------- */
   var feeSlider = document.getElementById("feeSlider");
   function updateFee() {
-    var pct = parseInt(feeSlider.value, 10);      // 1..10 (round-up %)
-    var fee = (1.05 - pct * 0.06).toFixed(2);     // 0.99% .. 0.45%
+    var pct = parseInt(feeSlider.value, 10);             // 1..100 (round-up %)
+    var fee = (1.0 - (pct - 1) / 99 * 0.9).toFixed(2);   // 1.00% .. 0.10%
     set("feeValue", fee + "%");
   }
   if (feeSlider) {
