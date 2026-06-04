@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
 </head>
 <body>
 
@@ -89,10 +89,10 @@
           <p class="lead">הזז את אחוז העיגול וצפה בדמי הניהול יורדים.</p>
           <div class="feemeter" style="margin-top:20px;text-align:start;">
             <div class="gauge" style="margin:0;">
-              <div class="gauge__value" id="feeValue" style="color:var(--gain);">3.03%</div>
+              <div class="gauge__value" id="feeValue" style="color:var(--gain);">5.50%</div>
               <div class="gauge__note" style="color:var(--muted);">דמי ניהול שנתיים על התיק</div>
             </div>
-            <input type="range" id="feeSlider" min="1" max="100" value="50" step="1" style="background:var(--navy-50);margin:18px 0 6px;" aria-label="אחוז עיגול" />
+            <input type="range" id="feeSlider" min="1" max="100" value="1" step="1" style="background:var(--navy-50);margin:18px 0 6px;" aria-label="אחוז עיגול" />
             <div class="scale" style="color:var(--muted);margin:0;"><span>עיגול 1%</span><span>עיגול 100%</span></div>
           </div>
         </div>
@@ -146,6 +146,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
